@@ -1,7 +1,7 @@
 :root {
   --cle-primary: rgb(106, 90, 205, 0.8);
   --clr-light: #f4f4f4;
-  --clr-dark: #333;
+  --clr-dark: rgba(34, 33, 33, 0.644);
   --clrwarning: rgb(99, 36, 36);
 }
 
@@ -16,7 +16,7 @@ body {
   margin: 0;
   font-family: "work Sans", sans-serif;
   font-weight: 300;
-  font-size: 1.5rem;
+  font-size: 1.0rem;
   background-color: var(--cle-primary);
   color: var(--cle-light);
 
@@ -30,7 +30,7 @@ body {
 .title {
   grid-area: header;
   text-align: center;
-  font-size: calc(7vw + 2rem);
+  font-size: calc(5vw + 2rem);
   font-weight: 900;
   color: rgba(0, 0, 0, 0.1);
   letter-spacing: 1px;
@@ -39,6 +39,7 @@ body {
 
 .all-tasks {
   grid-area: lists;
+  color: var(--clr-light);
 }
 
 .task-list {
@@ -140,6 +141,7 @@ form {
  .todo-header {
    padding: var(--spacer);
    background: #e4e4e4; 
+   color: black;
    display: flex;
    align-items: center;
 
@@ -245,7 +247,6 @@ form {
   position: absolute;
   width: 100%;
   left: 0;
-  top: 0;
   bottom: -35px;
   color: var(--clr-light);
 }
